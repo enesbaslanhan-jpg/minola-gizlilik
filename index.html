@@ -74,7 +74,7 @@
     <div class="tiles">
       <div class="tile sage"><h3>Önce telefonunda</h3><p>Girdiğin bilgiler <strong>kendi telefonunda</strong> saklanır. Hesap açmazsan kayıtların hiçbir yere gönderilmez.</p></div>
       <div class="tile sky"><h3>Hesap isteğe bağlı</h3><p>Hesap açarsan kayıtlarının <strong>bir yedeği</strong> Avrupa Birliği'ndeki (İrlanda) sunucuda saklanır; yeni telefonunda geri gelir.</p></div>
-      <div class="tile peach"><h3>Reklam ve takip yok</h3><p>Reklam ve kullanım istatistiği <strong>yoktur</strong>. Bilgilerin satılmaz. Yalnız uygulama çökerse, kişisel bilgi içermeyen bir hata raporu gider.</p></div>
+      <div class="tile peach"><h3>Reklam ve takip yok</h3><p>Reklam <strong>yoktur</strong>, bilgilerin satılmaz. Kullanım istatistikleri yalnız sen açarsan ve isimsiz gider; çökme raporu kişisel bilgi içermez.</p></div>
       <div class="tile lavender"><h3>Kontrol sende</h3><p>Verilerini istediğin zaman dışa aktarabilir, silebilir, hesabını ve yedeğini kalıcı olarak silebilirsin.</p></div>
     </div>
   </section>
@@ -145,6 +145,20 @@
   </section>
 
   <section class="card">
+    <h2>Kullanım istatistikleri (isteğe bağlı)</h2>
+    <p>Uygulamayı geliştirmek için hangi ekranların ne kadar kullanıldığını görmek istiyoruz. Bu <strong>kapalı
+    başlar</strong>; yalnız sen ilk açılışta ya da Ayarlar → Gizlilik'te "Kullanım istatistiklerini paylaş"ı açarsan çalışır
+    ve aynı yerden istediğin zaman kapatabilirsin.</p>
+    <ul>
+      <li><strong>Ne gider:</strong> açılan ekranın adı (örneğin "Dinle"), uygulama sürümü, Android ya da iPhone olduğu ve
+        telefona özel, rastgele üretilmiş bir numara.</li>
+      <li><strong>Ne gitmez:</strong> çocuğunun adı, doğum tarihi, kayıtların, notların, e-posta adresin, reklam kimliği,
+        konum, ekran kaydı. Rastgele numara seni ya da çocuğunu tanımlamaz; istatistiği kapatınca silinir.</li>
+      <li><strong>Nerede:</strong> PostHog, Avrupa Birliği (Almanya, Frankfurt) sunucuları. IP adresin saklanmaz.</li>
+    </ul>
+  </section>
+
+  <section class="card">
     <h2>Çökme raporları</h2>
     <p>Uygulama beklenmedik biçimde kapanırsa, hatayı bulup düzeltebilmemiz için teknik bir rapor
     <strong>Sentry</strong>'ye (Avrupa Birliği, Almanya) gönderilir. Raporda yalnızca hatanın teknik ayrıntıları, uygulama
@@ -162,15 +176,17 @@
 
   <section class="card">
     <h2>Hizmet sağlayıcılar</h2>
-    <p>Uygulamada reklam, analiz, sosyal ağ ya da takip amaçlı üçüncü taraf yazılım yoktur. Hikâye, ninni ve oyun
-    içerikleri uygulamanın içinde gelir. Çökme raporları için <strong>Sentry</strong> (Avrupa Birliği, Almanya) kullanılır.
+    <p>Uygulamada reklam, sosyal ağ ya da takip amaçlı üçüncü taraf yazılım yoktur. Hikâye, ninni ve oyun
+    içerikleri uygulamanın içinde gelir. Çökme raporları için <strong>Sentry</strong> (Avrupa Birliği, Almanya), açarsan kullanım
+    istatistikleri için <strong>PostHog</strong> (Avrupa Birliği, Almanya) kullanılır.
     Sadece hesap açarsan şu hizmetler de kullanılır:</p>
     <ul>
       <li><strong>Supabase</strong> (sunucu, giriş ve yedek saklama; Avrupa Birliği, İrlanda).</li>
       <li><strong>Google</strong> (Google ile giriş; e-postayla girişteki kod e-postalarının gönderimi).</li>
       <li><strong>Apple</strong> (Apple ile giriş).</li>
     </ul>
-    <p>Çökme raporları ve hesap açarsan hesap bilgilerin, bu hizmetlerin Türkiye dışındaki sunucularına aktarılır.
+    <p>Çökme raporları, açarsan kullanım istatistikleri ve hesap açarsan hesap bilgilerin, bu hizmetlerin Türkiye
+    dışındaki sunucularına aktarılır.
     Bilgilerin başka hiçbir amaçla paylaşılmaz.</p>
   </section>
 
